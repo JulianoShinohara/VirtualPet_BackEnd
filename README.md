@@ -7,8 +7,7 @@
 
 * [Sobre o Sistema](#about-the-project)
   * [Tecnologias](#built-with)
-* [Principais Funcionalidades](#features)
-* [Como rodar a apresentação](#getting-started)
+* [Como rodar a aplicação](#getting-started)
   * [Pré-requisitos](#prerequisites)
   * [Instalação](#installation)
 * [Contato](#contact)
@@ -40,9 +39,9 @@ O tutorial abaixo foi feito utilizando o sistema operacional Ubuntu 18.04.5.
 ### Instalação
 
 1. Clone o repositorio
-```sh
-git clone https://github.com/xShinohara/VirtualPet.git
-```
+    ```sh
+    git clone https://github.com/xShinohara/VirtualPet.git
+    ```
 2. No terminal rode os seguintes comandos:
 	```sh
 	psql -U postgres
@@ -51,7 +50,6 @@ git clone https://github.com/xShinohara/VirtualPet.git
     ```sh
     CREATE USER nome_novo_usuario WITH PASSWORD 'nova_senha';
     ALTER ROLE nome_novo_usuario CREATEROLE CREATEDB;
-    exit
     ```
 3. Na pasta raiz do projeto, crie um novo arquivo com o nome '.env' e adicione as seguintes linhas:
 	```sh
@@ -73,7 +71,7 @@ git clone https://github.com/xShinohara/VirtualPet.git
 <!-- CONTACT -->
 ## Contato
 
-Juliano Kendyi Shinohara -
+Juliano Kendyi Shinohara - <br>
 Alisson da Silva Vieira - alisson.v3@hotmail.com  
 
 Project Link: [https://github.com/xShinohara/VirtualPet.git](https://github.com/xShinohara/VirtualPet.git)
