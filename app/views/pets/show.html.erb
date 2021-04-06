@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @pet.nome %>
+</p>
+
+<p>
+  <strong>Life time:</strong>
+  <%= @pet.life_time %>
+</p>
+
+<p>
+  <strong>Hungry:</strong>
+  <%= @pet.hungry %>
+</p>
+
+<p>
+  <strong>Clean:</strong>
+  <%= @pet.clean %>
+</p>
+
+<p>
+  <strong>Sleep:</strong>
+  <%= @pet.sleep %>
+</p>
+
+<p>
+  <strong>Happiness:</strong>
+  <%= @pet.happiness %>
+</p>
+
+<p>
+  <strong>Helthy:</strong>
+  <%= @pet.helthy %>
+</p>
+
+<p>
+  <strong>Atual state:</strong>
+  <%= @pet.atual_state %>
+</p>
+
+<%= link_to 'Edit', edit_pet_path(@pet) %> |
+<%= link_to 'Back', pets_path %>

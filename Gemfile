@@ -22,6 +22,15 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Pacotes adicionados na mão:
+
+gem 'bootstrap', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'pusher'
+gem 'figaro'
+
+# Fim
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

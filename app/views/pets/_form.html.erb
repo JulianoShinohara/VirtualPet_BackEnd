@@ -1,0 +1,57 @@
+<%= form_with(model: pet) do |form| %>
+  <% if pet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pet.errors.count, "error") %> prohibited this pet from being saved:</h2>
+
+      <ul>
+        <% pet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :life_time %>
+    <%= form.number_field :life_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hungry %>
+    <%= form.number_field :hungry %>
+  </div>
+
+  <div class="field">
+    <%= form.label :clean %>
+    <%= form.number_field :clean %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sleep %>
+    <%= form.number_field :sleep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :happiness %>
+    <%= form.number_field :happiness %>
+  </div>
+
+  <div class="field">
+    <%= form.label :helthy %>
+    <%= form.number_field :helthy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :atual_state %>
+    <%= form.text_field :atual_state %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

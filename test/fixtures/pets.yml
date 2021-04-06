@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  life_time: 1
+  hungry: 1
+  clean: 1
+  sleep: 1
+  happiness: 1
+  helthy: 1
+  atual_state: MyString
+
+two:
+  nome: MyString
+  life_time: 1
+  hungry: 1
+  clean: 1
+  sleep: 1
+  happiness: 1
+  helthy: 1
+  atual_state: MyString
