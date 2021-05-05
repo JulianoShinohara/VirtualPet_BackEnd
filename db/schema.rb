@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 2021_04_06_214412) do
   enable_extension "plpgsql"
 
   create_table "pets", force: :cascade do |t|
-    t.string "nome", null: false
-    t.integer "life_time", null: false
-    t.integer "hungry", null: false
-    t.integer "clean", null: false
-    t.integer "sleep", null: false
-    t.integer "happiness", null: false
-    t.integer "helthy", null: false
-    t.string "atual_state", null: false
+    t.string "nome"
+    t.integer "life_time", default: 100
+    t.integer "hungry", default: 0
+    t.integer "clean", default: 100
+    t.integer "sleep", default: 100
+    t.integer "happiness", default: 100
+    t.integer "helthy", default: 100
+    t.string "atual_state", default: "STATE_NORMAL"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 2021_04_06_214412) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "login", null: false
-    t.string "senha", null: false
+    t.string "login"
+    t.string "senha"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

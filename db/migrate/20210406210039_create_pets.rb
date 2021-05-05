@@ -2,13 +2,13 @@ class CreatePets < ActiveRecord::Migration[6.1]
   def change
     create_table :pets do |t|
       t.string :nome
-      t.integer :life_time
-      t.integer :hungry
-      t.integer :clean
-      t.integer :sleep
-      t.integer :happiness
-      t.integer :helthy
-      t.string :atual_state
+      t.integer :life_time, :default => 100
+      t.integer :hungry, :default => 0
+      t.integer :clean, :default => 100
+      t.integer :sleep, :default => 100
+      t.integer :happiness, :default => 100
+      t.integer :helthy, :default => 100
+      t.string :atual_state, :default => "STATE_NORMAL"
 
       t.timestamps
     end
