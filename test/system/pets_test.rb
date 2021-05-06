@@ -21,6 +21,7 @@ class PetsTest < ApplicationSystemTestCase
     fill_in "Hungry", with: @pet.hungry
     fill_in "Life time", with: @pet.life_time
     fill_in "Nome", with: @pet.nome
+    fill_in "Skin", with: @pet.skin
     fill_in "Sleep", with: @pet.sleep
     click_on "Create Pet"
 
@@ -39,6 +40,7 @@ class PetsTest < ApplicationSystemTestCase
     fill_in "Hungry", with: @pet.hungry
     fill_in "Life time", with: @pet.life_time
     fill_in "Nome", with: @pet.nome
+    fill_in "Skin", with: @pet.skin
     fill_in "Sleep", with: @pet.sleep
     click_on "Update Pet"
 

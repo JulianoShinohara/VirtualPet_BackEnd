@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  resources :pets
   resources :user_pets
   resources :users
-  resources :pets
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
