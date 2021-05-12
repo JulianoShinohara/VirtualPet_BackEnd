@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Id</th>
       <th>Nome</th>
       <th>Skin</th>
       <th>Life time</th>
@@ -14,6 +15,7 @@
       <th>Happiness</th>
       <th>Helthy</th>
       <th>Atual state</th>
+      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,6 +23,7 @@
   <tbody>
     <% @pets.each do |pet| %>
       <tr>
+        <td><%= pet.id %></td>
         <td><%= pet.nome %></td>
         <td><%= pet.skin %></td>
         <td><%= pet.life_time %></td>
@@ -30,6 +33,7 @@
         <td><%= pet.happiness %></td>
         <td><%= pet.helthy %></td>
         <td><%= pet.atual_state %></td>
+        <td><%= pet.user_id %></td>
         <td><%= link_to 'Show', pet %></td>
         <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
         <td><%= link_to 'Destroy', pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

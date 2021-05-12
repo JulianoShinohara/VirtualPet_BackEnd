@@ -2,7 +2,7 @@
 
 one:
   nome: MyString
-  skin: MyString
+  skin: 1
   life_time: 1
   hungry: 1
   clean: 1
@@ -10,10 +10,11 @@ one:
   happiness: 1
   helthy: 1
   atual_state: MyString
+  user: one
 
 two:
   nome: MyString
-  skin: MyString
+  skin: 1
   life_time: 1
   hungry: 1
   clean: 1
@@ -21,3 +22,4 @@ two:
   happiness: 1
   helthy: 1
   atual_state: MyString
+  user: two

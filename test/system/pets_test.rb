@@ -23,6 +23,7 @@ class PetsTest < ApplicationSystemTestCase
     fill_in "Nome", with: @pet.nome
     fill_in "Skin", with: @pet.skin
     fill_in "Sleep", with: @pet.sleep
+    fill_in "User", with: @pet.user_id
     click_on "Create Pet"
 
     assert_text "Pet was successfully created"
@@ -42,6 +43,7 @@ class PetsTest < ApplicationSystemTestCase
     fill_in "Nome", with: @pet.nome
     fill_in "Skin", with: @pet.skin
     fill_in "Sleep", with: @pet.sleep
+    fill_in "User", with: @pet.user_id
     click_on "Update Pet"
 
     assert_text "Pet was successfully updated"
